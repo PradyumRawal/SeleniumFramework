@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite" parallel="tests">
+
+    <test verbose="2" preserve-order="true" name="D:/New folder (10)/New folder (2)/Programs/SeleniumFramework">
+        <classes>
+            <class name="Selenium.Framework.ErrorValidation">
+            </class>
+        </classes>
+        </test>
+          <test name="SubmitOrderTest">
+              <classes>
+            <class name="Selenium.Framework.SubmitOrderTest"> </class>
+              </classes>
+          </test>
+    <test name="BaseTest">
+        <classes>
+            <class name="Selenium.Framework.TestComponents.BaseTest"> </class>
+        </classes>
+
+    </test>
+
+
+</suite>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite" parallel="tests">
+    <listeners>
+        <listener class-name="Selenium.Framework.TestComponents.Listeners"/>
+
+    </listeners>
+
+    <test verbose="2" preserve-order="true" name="D:/New folder (10)/New folder (2)/Programs/SeleniumFramework">
+        <classes>
+            <class name="Selenium.Framework.ErrorValidation">
+                <methods><include name="loginErrorValidation"/>
+                    <include name="productErrorValidation"/>
+                </methods>
+            </class>
+        </classes>
+        </test>
+          <test name="SubmitOrderTest">
+              <classes>
+            <class name="Selenium.Framework.SubmitOrderTest">
+                <methods><include name="submitOrder"/>
+                </methods>
+
+            </class>
+              </classes>
+          </test>
+    <test name="BaseTest">
+        <classes>
+            <class name="Selenium.Framework.TestComponents.BaseTest"> </class>
+        </classes>
+
+    </test>
+
+
+</suite>
