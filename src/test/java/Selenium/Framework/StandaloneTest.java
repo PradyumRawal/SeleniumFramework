@@ -36,8 +36,9 @@ public class StandaloneTest {
                 findElement(By.tagName("b")).getText().equalsIgnoreCase(productName)).findFirst().orElse(null);
         product.findElement(By.className("w-10")).click();
 
-       // wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#toast-container")));
-       // wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.cssSelector(".ng-animating"))));
+
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#toast-container")));
+        wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.cssSelector(".ng-animating"))));
 
        // WebElement product1 = items.stream().filter(item->item.
                // findElement(By.tagName("b")).getText().equalsIgnoreCase("ADIDAS ORIGINAL")).findFirst().orElse(null);
